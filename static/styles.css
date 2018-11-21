@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fdfdfd;
+  /* position: relative; */
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.vertical-center {
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%;
+  /* These two lines are counted as one :-)       */
+  /* min-height: 100vh; */
+
+  display: flex;
+  align-items: center;
+}
+
+
+#logo-image {
+  padding-left: 2rem;
+  height: 150%;
+  width: 150%;
+}
+
+.carousel {
+  background: pink;
+}
+
+/* 
+.carousel img {
+height: 50%;
+} */
+
+/* .navbar {
+  padding: 1.4rem;
+} */
+
+.carousel-caption a {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.carousel-caption a:hover {
+  opacity: .6;
+}
+
+.designation {
+  color: #777;
+}
+
+
+
+.team-member-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.team-member-block div {
+  padding: 15px;
+}
+
+.team-member-photo {
+  height: 100%;
+}
+
+section>h1 {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.middle {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#team-carousel {
+  background: bisque;
+}
+
+#team-carousel .carousel-caption {
+  position: static;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .middle {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .middle {
+    width: 70%;
+  }
+}
