@@ -1,11 +1,21 @@
-html {
+html,
+body {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body,
 nav {
   background: #ebebeb;
   /* position: relative; */
+}
+
+footer {
+  height: 10vh;
+}
+
+.h1 {
+  color: #135204;
 }
 
 .container-fluid {
@@ -22,6 +32,11 @@ nav {
   align-items: center;
 }
 
+.middle {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
 
 #logo-image {
   padding-left: 2rem;
@@ -29,37 +44,72 @@ nav {
   width: 150%;
 }
 
-.carousel {
-  background: pink;
+#home {
+  margin-top: 10px;
 }
 
-/* 
-.carousel img {
-height: 50%;
-} */
+#our-vision {
 
-/* .navbar {
-  padding: 1.4rem;
-} */
+  /* The image used */
+  background-image: url("/static/images/astronaut.webp");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: whitesmoke !important;
+}
+
+#testimonial {
+  /* The image used */
+  background-image: url("/static/images/testimonials.webp");
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke !important;
+}
+
+#contact-us {
+  min-height: 500px;
+}
+
+#contact-us-image {
+  /* The image used */
+  background-image: url("/static/images/digital-art.webp");
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transbox {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
 
 .nav-link.active {
   background-color: darkseagreen;
   border-radius: 5px;
 }
 
-.carousel-caption a {
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-}
-
-.carousel-caption a:hover {
-  opacity: .6;
-}
-
 .designation {
   color: #777;
 }
-
-
 
 .team-member-block {
   display: flex;
@@ -76,17 +126,20 @@ height: 50%;
   height: 100%;
 }
 
-section>h1 {
+section h1 {
   text-align: center;
   padding: 2.5rem 0;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif !important;
   font-weight: 700 !important;
 }
 
-.middle {
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
+/* All carousels */
+.carousel-caption a {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.carousel-caption a:hover {
+  opacity: .6;
 }
 
 #team-carousel {
@@ -109,6 +162,11 @@ section>h1 {
 
 #main-carousel h2 {
   font-weight: 700;
+}
+
+
+::selection {
+  background-color: #74c050;
 }
 
 @media only screen and (max-width: 768px) {
