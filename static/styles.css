@@ -2,8 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #fdfdfd;
+body,
+nav {
+  background: #ebebeb;
   /* position: relative; */
 }
 
@@ -40,6 +41,11 @@ height: 50%;
 /* .navbar {
   padding: 1.4rem;
 } */
+
+.nav-link.active {
+  background-color: darkseagreen;
+  border-radius: 5px;
+}
 
 .carousel-caption a {
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
@@ -90,6 +96,19 @@ section>h1 {
 #team-carousel .carousel-caption {
   position: static;
   color: black;
+}
+
+#main-carousel .carousel-caption {
+  background: #ebebeb;
+  margin: 0 auto;
+  padding: 1rem;
+  color: black;
+  width: 600px;
+  box-shadow: 0px 0px 30px #aaaaaa;
+}
+
+#main-carousel h2 {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
