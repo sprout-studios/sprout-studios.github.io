@@ -111,21 +111,6 @@ footer {
   color: #777;
 }
 
-.team-member-block {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  text-align: left;
-}
-
-.team-member-block div {
-  padding: 15px;
-}
-
-.team-member-photo {
-  height: 100%;
-}
-
 section h1 {
   text-align: center;
   padding: 2.5rem 0;
@@ -134,23 +119,6 @@ section h1 {
 }
 
 /* All carousels */
-.carousel-caption a {
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-}
-
-.carousel-caption a:hover {
-  opacity: .6;
-}
-
-#team-carousel {
-  background: bisque;
-}
-
-#team-carousel .carousel-caption {
-  position: static;
-  color: black;
-}
-
 #main-carousel .carousel-caption {
   background: #ebebeb;
   margin: 0 auto;
@@ -164,6 +132,39 @@ section h1 {
   font-weight: 700;
 }
 
+.carousel-caption a {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.carousel-caption a:hover {
+  opacity: .6;
+}
+
+#team-carousel {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+#team-carousel .carousel-caption {
+  position: static;
+  color: black;
+}
+
+.team-member-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.team-member-block div {
+  padding: 15px;
+}
+
+.team-member-photo {
+  height: 480px;
+}
+
 
 ::selection {
   background-color: #74c050;
@@ -173,10 +174,18 @@ section h1 {
   .middle {
     width: 90%;
   }
+
+  #team-carousel {
+    width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .middle {
     width: 70%;
+  }
+
+  #team-carousel {
+    width: 70vw;
   }
 }
