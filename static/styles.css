@@ -40,8 +40,7 @@ footer {
 
 #logo-image {
   padding-left: 2rem;
-  height: 150%;
-  width: 150%;
+  transform: translateY(10%);
 }
 
 #home {
@@ -103,8 +102,7 @@ footer {
 }
 
 .nav-link.active {
-  background-color: darkseagreen;
-  border-radius: 5px;
+  color: darkseagreen !important;
 }
 
 .designation {
@@ -123,7 +121,7 @@ section h1 {
   font-weight: 700;
 }
 
-#projects  {
+#projects {
   margin-top: 1rem;
 }
 
