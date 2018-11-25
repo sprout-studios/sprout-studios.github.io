@@ -78,6 +78,14 @@ footer {
   color: whitesmoke !important;
 }
 
+#welcome {
+  background-image: url("/static/images/digital-art.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #contact-us {
   min-height: 500px;
 }
@@ -143,9 +151,11 @@ section h1 {
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 
-.carousel-caption a:hover {
+.carousel-caption a[role=button]:hover {
   opacity: .6;
 }
+
+/* edit above line for button hover state */
 
 #team-carousel {
   width: 60vw;
