@@ -2,12 +2,17 @@ html,
 body {
   scroll-behavior: smooth;
   height: 100%;
+  /* overflow-x: hidden; */
 }
 
 body,
 nav {
   background: #ebebeb;
   /* position: relative; */
+}
+
+#team a[class^=carousel-control] {
+  display: none;
 }
 
 section {
@@ -49,6 +54,12 @@ footer {
 
 #welcome h1 {
   font-size: 3rem;
+  text-align: left;
+}
+
+#welcome .transbox {
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 #home {
@@ -178,8 +189,8 @@ section h1 {
   padding: 15px;
 }
 
-.team-member-photo {
-  height: 480px;
+.team-member-photo img {
+  height: 304px;
 }
 
 ::selection {
