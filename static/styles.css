@@ -56,13 +56,8 @@ footer {
 }
 
 #our-vision {
-
   /* The image used */
   background-image: url("/static/images/astronaut.webp");
-
-  /* Set a specific height */
-  min-height: 500px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -99,8 +94,6 @@ footer {
 #contact-us-image {
   /* The image used */
   background-image: url("/static/images/digital-art.webp");
-  min-height: 500px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,11 +101,12 @@ footer {
 }
 
 .transbox {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  color: whitesmoke;
 }
 
 .nav-link.active {
@@ -190,6 +184,20 @@ section h1 {
 
 ::selection {
   background-color: #74c050;
+}
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#scroll-to-top:hover {
+  background: #74c050;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
