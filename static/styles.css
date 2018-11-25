@@ -10,6 +10,10 @@ nav {
   /* position: relative; */
 }
 
+section {
+  height: 100vh;
+}
+
 footer {
   height: 10vh;
 }
@@ -43,6 +47,10 @@ footer {
   transform: translateY(10%);
 }
 
+#welcome h1 {
+  font-size: 3rem;
+}
+
 #home {
   margin-top: 10px;
 }
@@ -67,8 +75,6 @@ footer {
 #testimonial {
   /* The image used */
   background-image: url("/static/images/testimonials.webp");
-  /* Set a specific height */
-  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -103,7 +109,7 @@ footer {
 
 .transbox {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
