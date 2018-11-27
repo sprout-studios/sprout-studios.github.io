@@ -7,13 +7,13 @@ body {
 
 body,
 nav {
-  background: #ebebeb;
+  background: rgba(0, 0, 0, 0.4);
   /* position: relative; */
 }
 
-#team a[class^=carousel-control] {
+/* #team a[class^=carousel-control] {
   display: none;
-}
+} */
 
 section {
   height: 100vh;
@@ -23,12 +23,31 @@ footer {
   height: 10vh;
 }
 
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .h1 {
   color: #135204;
 }
 
 .container-fluid {
   padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, .95);
 }
 
 .vertical-center {
@@ -48,8 +67,9 @@ footer {
 }
 
 #logo-image {
-  padding-left: 2rem;
-  transform: translateY(10%);
+  padding-left: 5rem;
+  width: 250px;
+  height: 80px;
 }
 
 #welcome h1 {
@@ -68,7 +88,7 @@ footer {
 
 #our-vision {
   /* The image used */
-  background-image: url("/static/images/astronaut.webp");
+  background-image: url("https://i.imgur.com/gOytgNX.jpg");
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -80,7 +100,7 @@ footer {
 
 #testimonial {
   /* The image used */
-  background-image: url("/static/images/testimonials.webp");
+  background-image: url("https://i.imgur.com/WAKTHSL.jpg");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -91,20 +111,16 @@ footer {
 }
 
 #welcome {
-  background-image: url("/static/images/digital-art.webp");
+  background-image: url("https://i.imgur.com/soZore8.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#contact-us {
-  min-height: 500px;
-}
-
 #contact-us-image {
   /* The image used */
-  background-image: url("/static/images/digital-art.webp");
+  background-image: url("https://i.imgur.com/PS2pF3Y.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,9 +136,9 @@ footer {
   color: whitesmoke;
 }
 
-.nav-link.active {
+/* .nav-link.active {
   color: darkseagreen !important;
-}
+} */
 
 .designation {
   color: #777;
@@ -130,8 +146,8 @@ footer {
 
 section h1 {
   text-align: center;
-  padding: 2.5rem 0;
-  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif !important;
+  padding: .5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700 !important;
 }
 
@@ -225,11 +241,19 @@ section h1 {
   #team-carousel {
     width: 100vw;
   }
+
+  #logo-image {
+    padding-left: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .middle {
     width: 70%;
+  }
+
+  #logo-image {
+    padding-left: 1rem;
   }
 
   #team-carousel {
