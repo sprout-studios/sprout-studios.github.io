@@ -42,27 +42,15 @@ footer {
   padding: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, .75);
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, .95);
-}
-
-.vertical-center {
-  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100%;
-  /* These two lines are counted as one :-)       */
-  /* min-height: 100vh; */
-
-  display: flex;
-  align-items: center;
-}
-
-.middle {
+.horizontal-center {
+  /* this definition will be deleted */
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   text-align: center;
 }
 
@@ -82,8 +70,12 @@ footer {
   justify-content: space-around;
 }
 
-#home {
-  margin-top: 10px;
+#welcome {
+  background-image: url("https://i.imgur.com/soZore8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #our-vision {
@@ -108,14 +100,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke !important;
-}
-
-#welcome {
-  background-image: url("https://i.imgur.com/soZore8.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #contact-us-image {
@@ -234,7 +218,7 @@ section h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .middle {
+  .horizontal-center {
     width: 90%;
   }
 
@@ -248,7 +232,7 @@ section h1 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .middle {
+  .horizontal-center {
     width: 70%;
   }
 
