@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  const el = document.querySelectorAll('img');
+  const observer = lozad(el);
+  observer.observe();
+
   // turn the carousel alive
   $('.carousel').carousel({
     interval: 10000

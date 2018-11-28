@@ -11,10 +11,6 @@ nav {
   /* position: relative; */
 }
 
-/* #team a[class^=carousel-control] {
-  display: none;
-} */
-
 section {
   height: 100vh;
 }
@@ -34,12 +30,19 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.h1 {
-  color: #135204;
-}
-
 .container-fluid {
   padding: 0;
+}
+
+.carousel,
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -52,6 +55,11 @@ footer {
   margin: 0 auto;
   width: 70%;
   text-align: center;
+}
+
+.profile,
+.profile-info {
+  margin: 0 1rem;
 }
 
 #logo-image {
@@ -90,6 +98,10 @@ footer {
   color: whitesmoke !important;
 }
 
+#team-carousel .profile-info {
+  color: #f8f9fa;
+}
+
 #testimonial {
   /* The image used */
   background-image: url("https://i.imgur.com/WAKTHSL.jpg");
@@ -120,12 +132,8 @@ footer {
   color: whitesmoke;
 }
 
-/* .nav-link.active {
-  color: darkseagreen !important;
-} */
-
 .designation {
-  color: #777;
+  color: #9c9c9c;
 }
 
 section h1 {
@@ -140,8 +148,14 @@ section h1 {
   font-weight: 700;
 }
 
-#projects {
-  margin-top: 1rem;
+.black-background {
+  background: #555555;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 #main-carousel .carousel-caption {
@@ -167,31 +181,6 @@ section h1 {
 }
 
 /* edit above line for button hover state */
-
-#team-carousel {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-#team-carousel .carousel-caption {
-  position: static;
-  color: black;
-}
-
-.team-member-block {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  text-align: left;
-}
-
-.team-member-block div {
-  padding: 15px;
-}
-
-.team-member-photo img {
-  height: 304px;
-}
 
 ::selection {
   background-color: #74c050;
@@ -222,10 +211,6 @@ section h1 {
     width: 90%;
   }
 
-  #team-carousel {
-    width: 100vw;
-  }
-
   #logo-image {
     padding-left: 3rem;
   }
@@ -238,10 +223,6 @@ section h1 {
 
   #logo-image {
     padding-left: 1rem;
-  }
-
-  #team-carousel {
-    width: 70vw;
   }
 
   #main-carousel .carousel-caption {
