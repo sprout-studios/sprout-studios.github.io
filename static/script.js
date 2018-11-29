@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 
   $('#main-carousel').carousel({
-    interval: 20000
+    interval: 99999
   });
 
   $('#team-carousel').carousel({

@@ -179,6 +179,10 @@ section h1 {
   background-color: #74c050;
 }
 
+.carousel-item {
+  height: 100%;
+}
+
 #scroll-to-top {
   display: none;
   position: fixed;
