@@ -30,4 +30,9 @@ $(document).ready(function () {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   });
 
+  // collapse mobile navbar after clicking on link
+  $(".navbar li a").click(function (event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+
 });

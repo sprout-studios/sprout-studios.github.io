@@ -50,16 +50,9 @@ footer {
   color: rgba(255, 255, 255, .75);
 }
 
-.horizontal-center {
-  /* this definition will be deleted */
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-}
-
 .profile,
 .profile-info {
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 #logo-image {
@@ -207,25 +200,13 @@ section h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .horizontal-center {
-    width: 90%;
-  }
-
   #logo-image {
     padding-left: 3rem;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .horizontal-center {
-    width: 70%;
-  }
-
   #logo-image {
     padding-left: 1rem;
-  }
-
-  #main-carousel .carousel-caption {
-    bottom: 20%;
   }
 }
