@@ -91,10 +91,6 @@ footer {
   color: whitesmoke !important;
 }
 
-#team-carousel .profile-info {
-  color: #f8f9fa;
-}
-
 #testimonial {
   /* The image used */
   background-image: url("https://i.imgur.com/WAKTHSL.jpg");
@@ -148,7 +144,6 @@ section h1 {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
-  padding: 1rem;
 }
 
 #main-carousel .carousel-caption {
@@ -157,7 +152,6 @@ section h1 {
   padding: 1rem;
   color: black;
   width: 600px;
-  box-shadow: 0px 0px 30px #aaaaaa;
   bottom: 40%;
 }
 
